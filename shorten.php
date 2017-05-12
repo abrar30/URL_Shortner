@@ -5,7 +5,7 @@ $s = new Shortener;
 if(isset($_POST['url'])){
      $url = $_POST['url'];
     if($code = $s->makeCode($url)){
-        $_SESSION['feedback'] = " <div class = 'alert alert-success'>Your Short URL is <a href = \"http://localhost/{$code}\"> http://localhost/{$code}</a> </div>";
+        $_SESSION['feedback'] = " <div class = 'alert alert-success'>Your Short URL is <a href = \"http://localhost/URL_Shortner/{$code}\"> http://localhost/URL_Shortner/{$code}</a> </div>";
     } 
     else{
         //there was error
